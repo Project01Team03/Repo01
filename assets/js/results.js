@@ -30,14 +30,6 @@ if(localStorage.getItem('Quote') != null){
     img.src = `${localStorage.getItem('posterImage')}`;
 }
 
-randomBtn.click(function() {
-    getQuote()
-    makeImg()
-    quoteEl.text(`${localStorage.getItem('Quote')}`)
-    authorEl.text(`-${localStorage.getItem('Author')}`)
-    
-    img.src = `${localStorage.getItem('posterImage')}`;
-})
 
 function makeImg() {
     var backgroundImg = {
@@ -72,6 +64,12 @@ function makeImg() {
     });
 }
 
+randomBtn.click(function() {
+    getQuote()
+    makeImg()
+    quoteEl.text(`${localStorage.getItem('Quote')}`)
+    authorEl.text(`-${localStorage.getItem('Author')}`)
+    
+    img.src = `${localStorage.getItem('posterImage')}`;
+})
 
-
-makeImg();
