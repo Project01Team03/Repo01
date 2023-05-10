@@ -46,7 +46,7 @@ function makeImg() {
         return response.json();
     })
     .then(function (data) {
-        var filteredData = data.filter(item => item.url); 
+        var filteredData = data.filter(item => item.url && item.url.startsWith("http")); 
         console.log(filteredData);
             /* var img = document.createElement("img");
             img.src = data;
