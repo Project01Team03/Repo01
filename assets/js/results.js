@@ -39,9 +39,6 @@ randomBtn.click(function() {
     img.src = `${localStorage.getItem('posterImage')}`;
 })
 
-
-
-
 function makeImg() {
     var backgroundImg = {
         shiba: "http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true",
@@ -57,19 +54,24 @@ function makeImg() {
     var randomImg = cuteImgs[randomIndex];
     var generateImg = backgroundImg[randomImg];
 
-
     fetch(generateImg)
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
-        var filteredData = data.filter(item => item.url && item.url.startsWith("http")); 
-        console.log(filteredData);
-            /* var img = document.createElement("img");
-            img.src = data;
-            bodyEl.append(img); */
-            localStorage.setItem('posterImage', data[0]);
+        var filteredData = [];
+        if (Array.isArray(data)) {
+            filteredData = data.filter(item => item.download_url || item.url || item.image).map(item => item.download_url || item.url || item.image); 
+        } else if (typeof data === 'object') {
+            if (data.download_url || data.url || data.image) {
+                filteredData = [data.download_url || data.url || data.image];
+            }
+        }
+        localStorage.setItem('posterImage', filteredData[0]);
+        console.log(filteredData[0]);
     });
 }
+
+
 
 makeImg();
