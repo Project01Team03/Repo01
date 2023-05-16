@@ -46,6 +46,10 @@ body {
     font-size: 2rem;
 }
 
+#btn-container .col {
+    float: none;
+}
+
 #options {
     padding: 0 0.75rem;
     font-family: 'Poppins', sans-serif;
