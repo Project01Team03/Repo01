@@ -7,11 +7,27 @@ header {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-weight: 500;
-    padding: 0 60px;
+    margin: 0 auto;
+    width: 90%;
 }
 
 a {
     color:#ff9800;
+}
+
+.select-wrapper input.select-dropdown {
+    font-size: 12px;
+}
+
+.input-field {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
 }
 
 h4 {
@@ -22,14 +38,19 @@ h4 {
     font-size: 1.5rem;
 }
 
+h6 {
+    font-size: 12px;
+    margin: 0;  
+}
+
 #shiba {
     text-align: center;
 }
 
 #poster-container {
     position: relative;
-    /* width: 100%; */
-    height: 40vw;
+    height: 80vh;
+    max-height: 800px;
     border: 48px solid black;
     margin: 2px solid black;
 }
@@ -43,25 +64,7 @@ h4 {
     overflow: hidden;
 }
 
-.full-quote {
-    padding: 20px;
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 2.5vw;
-    color: white;
-    text-shadow: black 3px 3px 24px;
-}
-
-.full-author {
-    color: white;
-    text-shadow: black 3px 3px 3px;
-    padding-top: 20px;
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 1.25vw;
-}
-
-
 #btn-container {
-    padding: 40px 40px 40px 0px;
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     text-align: center;
@@ -80,8 +83,8 @@ h4 {
 #download-btn {
     margin: 8px 0;
     /* width: 100%; */
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #generate-customized {
@@ -89,8 +92,32 @@ h4 {
     width: 100%;
 }
 
+#font-color {
+    text-align: left;
+}
+
+.container {
+    width: 90%;
+}
+
 .filter {
     margin-top: 30px;
+}
+
+.full-quote {
+    padding: 20px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2.5vw;
+    color: white;
+    text-shadow: black 3px 3px 24px;
+}
+
+.full-author {
+    color: white;
+    text-shadow: black 3px 3px 3px;
+    padding-top: 20px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.25vw;
 }
 
 .card {
@@ -102,13 +129,6 @@ h4 {
     overflow: visible;
 }
 
-h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    font-weight: 900;
-    margin: 0;
-}
-
 .valign-wrapper {
     margin: 0;
 }
@@ -116,14 +136,7 @@ h1 {
 .poster {
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100%; */
 }
-
-/* .logo{
-    width: 50px;
-    height: 50px;
-    margin-top: 8px;
-} */
  
 .dropdown-content li>a, .dropdown-content li>span {
     color: #ff9800;

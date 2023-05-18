@@ -39,23 +39,98 @@
     </header>
 
     <div class="container">
-        <div class="row">
+      <div class="row">
             
           <!-- Div holds the Generate button -->
-
-
-            <div class="col s6" id="btn-container">
+        <div class="col s4" id="btn-container">
+            <div class="row">
               <div style="text-align: center">
                 <img width="250px" class="float" src="assets/pictures/shiba-zen-transparent.png">
                 <div class="shadow"></div>
               </div>
-                <!-- <a class="orange btn-large modal-trigger" href="#modal1">Customize</a> -->
-                <a id="random-btn" class="btn-large orange">Generate Zen</a>
-                <a id="download-btn" class="btn-large orange"><i class="fa-solid fa-download"></i></a>
+                <!-- <a id="random-btn" class="btn orange">Generate Zen</a>
+                <a id="download-btn" class="btn orange"><i class="fa-solid fa-download"></i></a> -->
+            </div>
+
+            <div class="row">
+              <div class="col s6">
+                <div class="input-field col s12">
+                <select id="animal">
+                  <option value="" disabled selected>Select</option>
+                  <option value="dogs">Dogs</option>
+                  <option value="cats">Cats</option>
+                  <option value="birds">Birds</option>
+                </select>
+                <label>Animals</label>
+                </div></div>
+              <div class="col s6">
+                <div class="input-field col s12">
+                  <select id="theme">
+                    <option value="" disabled selected>Select</option>
+                    <option value="inspiration">Inspiration</option>
+                    <option value="courage">Courage</option>
+                    <option value="empathy">Empathy</option>
+                    <option value="imagination">Imagination</option>
+                    <option value="happiness">Happiness</option>
+                    <option value="knowledge">Knowledge</option>
+                  </select>
+                  <label>Themes</label>
+              </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s6">
+                <div class="input-field col s12">
+                  <select id="font">
+                    <option value="" disabled selected>Select</option>
+                    <option value="serif">Serif</option>
+                    <option value="sans serif">Sans Serif</option>
+                    <option value="handwriting">Handwriting</option>
+                    <option value="display">Display</option>
+                    <option value="monospace">Monospace</option>
+                  </select>
+                  <label>Fonts</label>
+              </div>
+              </div>
+              <div class="col s6"><div class="input-field col s12">
+                <select id="position">
+                    <option disabled selected>Select</option>
+                    <option value="" id="text-position">Random</option>
+                    <option value='flex-start' data-align="left">Left</option>
+                    <option value='center' data-align="center">Center</option>
+                    <option value='flex-end' data-align="right">Right</option>
+                </select>
+                <label>Quote Position</label>
+            </div></div>
+            </div>
+
+            <div class="row">
+              <div class="col s6">
+                <h6>Border Color</h6>
+                <div class="input-field col s12">
+                    <input type="color" id="border-color">
+                    
+                </div>
+                <!-- <div class="row">
+                    <a href="#!" id="change-border-color" class="modal-close btn blue">Change</a>
+                </div> -->
+              </div>
+              <div class="col s6">
+                <h6>Font Color</h6>
+                <div class="input-field col s12">
+                    <input type="color" id="font-color">
+                    
+                </div>
+                <div class="row">
+                    <!-- <a href="#!" id="change-font-color" class="modal-close btn blue">Change</a> -->
+                </div></div>
+            </div>
+            <a id="random-btn" class="btn orange">Generate Zen</a>
+                <a id="download-btn" class="btn orange"><i class="fa-solid fa-download"></i></a>
             </div>
             
             <!-- Div holds the poster elements -->
-            <div class="col s6 card-panel hoverable poster valign-wrapper" id="poster-container">
+            <div class="col s8 card-panel hoverable poster valign-wrapper" id="poster-container">
                 
                     <div class="">
                         <div id="quote">
@@ -69,10 +144,10 @@
             </div>
         </div>
             <!-- END div that holds poster elements -->
-            <div class="row" id="">
+            <!-- <div class="row" id="">
               <div class="">
                 <div class="row filter">
-                  <!-- <h4>Choose your destiny</h4> -->
+                  <h4>Choose your destiny</h4>
                     <div class="col s4">
                         <div class="input-field col s12">
                             <select id="animal">
@@ -112,6 +187,44 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col s12 l4">
+                  <div class="input-field col s12">
+                      <select id="position">
+                          <option disabled selected>Select a position</option>
+                          <option value="" id="text-position">Random</option>
+                          <option value='flex-start' data-align="left">Left</option>
+                          <option value='center' data-align="center">Center</option>
+                          <option value='flex-end' data-align="right">Right</option>
+                      </select>
+                      <label>Quote Position</label>
+                  </div>
+                  <div class="row">
+                      <a href="#!" id="change-position" class="modal-close btn-large blue">Change</a>
+                  </div>
+              </div>
+              <div class="col s12 l4">
+                  <h6>Border Color</h6>
+                  <div class="input-field col s12">
+                      <input type="color" id="border-color">
+                      
+                  </div>
+                  <div class="row">
+                      <a href="#!" id="change-border-color" class="modal-close btn-large blue">Change</a>
+                  </div>
+              </div>
+              <div class="col s12 l4">
+                  <h6>Font Color</h6>
+                  <div class="input-field col s12">
+                      <input type="color" id="font-color">
+                      
+                  </div>
+                  <div class="row">
+                      <a href="#!" id="change-font-color" class="modal-close btn-large blue">Change</a>
+                  </div>
+              </div>
+              
+          </div> -->
             </div>
                 <!-- <div class="col s12"><a id="download-btn" class="btn-large orange">Download</a></div> -->
             </div>
