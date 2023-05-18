@@ -17,6 +17,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/9a095f6261.js" crossorigin="anonymous"></script>
 
 
     <title>Motivational Poster Generator Results</title>
@@ -27,11 +28,11 @@
     <header>
             <div class="row valign-wrapper">
               <div class="col s6">
-                <a href="index.html"><h1>Z4U</h1></a>
+                <h1><a href="index.html">Z4U</a></h1>
               </div>
               <div class="col s6">
                 <ul id="" class="right">
-                    <li><a href="#modalAbout" class="btn modal-trigger">About</a></li>
+                    <li><a href="#modalAbout" class="btn modal-trigger orange">About</a></li>
                 </ul>
               <div>
             </div>
@@ -49,8 +50,8 @@
                 <div class="shadow"></div>
               </div>
                 <!-- <a class="orange btn-large modal-trigger" href="#modal1">Customize</a> -->
-                <a id="random-btn" class="btn-large orange">Generate</a>
-                <div class="col s12"><a id="download-btn" class="btn-large orange">Download</a></div>
+                <a id="random-btn" class="btn-large orange">Generate Zen</a>
+                <a id="download-btn" class="btn-large orange"><i class="fa-solid fa-download"></i></a>
             </div>
             
             <!-- Div holds the poster elements -->
@@ -70,7 +71,8 @@
             <!-- END div that holds poster elements -->
             <div class="row" id="">
               <div class="">
-                <div class="row">
+                <div class="row filter">
+                  <!-- <h4>Choose your destiny</h4> -->
                     <div class="col s4">
                         <div class="input-field col s12">
                             <select id="animal">

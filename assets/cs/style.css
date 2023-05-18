@@ -10,9 +10,16 @@ header {
     padding: 0 60px;
 }
 
-nav {
-    background-color: white;
-    color: black;
+a {
+    color:#ff9800;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
 }
 
 #shiba {
@@ -41,7 +48,7 @@ nav {
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 2.5vw;
     color: white;
-    text-shadow: black 3px 3px 3px;
+    text-shadow: black 3px 3px 24px;
 }
 
 .full-author {
@@ -54,14 +61,15 @@ nav {
 
 
 #btn-container {
-    padding: 40px;
+    padding: 40px 40px 40px 0px;
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
+    text-align: center;
 }
 
 #random-btn {
     margin: 8px 0;
-    width: 100%;
+    /* width: 100%; */
 }
 
 #customize-btn {
@@ -71,7 +79,9 @@ nav {
 
 #download-btn {
     margin: 8px 0;
-    width: 100%;
+    /* width: 100%; */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #generate-customized {
@@ -79,8 +89,8 @@ nav {
     width: 100%;
 }
 
-.container {
-    /* padding-top: 50px; */
+.filter {
+    margin-top: 30px;
 }
 
 .card {
@@ -96,7 +106,11 @@ h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     font-weight: 900;
-    margin: 0
+    margin: 0;
+}
+
+.valign-wrapper {
+    margin: 0;
 }
 
 .poster {
